@@ -1,0 +1,95 @@
+$standard_text: #999;
+$standard_background: #f4f4f4;
+$nav_background: #880033;
+
+body {
+	background: #fff;
+	color: $standard_text;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+#wrapper {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+header {
+	float: left;
+	margin: 0 0 30px 0;
+	width: 100%;
+	background: $standard_background;
+	padding: 5px 0 0 0;
+	color: $standard_text;
+	#logo {
+		text-align: center;
+	}
+	h1 {
+		margin: 15px 0;
+		font-size: 1.75em;
+		color: $standard_text;
+	}
+	h2 {
+		font-size: 0.75em;
+		color: $standard_text;
+	}
+}
+
+nav {
+	text-align: center;
+	background: $nav_background;
+	padding: 10px 0;
+	margin: 20px 0 0;
+	ul {
+		list-style: none;
+		margin: 0 10px;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+	}
+	a {
+		padding: 15px 10px;
+		font-weight: 600;
+		color: #fff;
+		&:visited {
+			color: #fff;
+		}
+		&:hover {
+			color: darken(white, 20%);
+		}
+	}
+}
+
+#gallery {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	li {
+		float: left;
+		width: 45%;
+		margin: 2.5%;
+		background: $standard_background;
+	}
+	li a p {
+		padding: 0 5%;
+		font-size: 0.75em;
+		font-weight: 700;
+		color: $standard_text;
+	}
+}
+
+footer {
+	clear: both;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 0.75em;
+}
+
