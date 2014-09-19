@@ -1,6 +1,6 @@
 $standard_text: #999;
 $standard_background: #f4f4f4;
-$nav_background: #880033;
+$accent_color: #880033;
 
 body {
 	background: #fff;
@@ -9,16 +9,25 @@ body {
 
 a {
 	text-decoration: none;
+	color: $accent_color;
 }
 
 img {
 	max-width: 100%;
+	border-radius: 10px;
+}
+
+h3 {
+	margin: 0 0 1em 0;
 }
 
 #wrapper {
 	max-width: 940px;
 	margin: 0 auto;
 	padding: 0 5%;
+	p {
+		line-height: 1.5;
+	}
 }
 
 header {
@@ -44,7 +53,7 @@ header {
 
 nav {
 	text-align: center;
-	background: $nav_background;
+	background: $accent_color;
 	padding: 10px 0;
 	margin: 20px 0 0;
 	ul {
@@ -54,16 +63,17 @@ nav {
 	}
 	li {
 		display: inline-block;
+		margin: 0 0 0 -5px;
 	}
 	a {
-		padding: 15px 10px;
+		padding: 10px 10px;
 		font-weight: 600;
 		color: #fff;
 		&:visited {
 			color: #fff;
 		}
-		&:hover {
-			color: darken(white, 20%);
+		&:hover, &.selected {
+			background: lighten($accent_color, 8%);
 		}
 	}
 }
@@ -84,6 +94,13 @@ nav {
 		font-weight: 700;
 		color: $standard_text;
 	}
+}
+
+.profile-photo {
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 30px;
+	border-radius: 100%;
 }
 
 footer {

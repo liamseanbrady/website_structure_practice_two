@@ -3,15 +3,22 @@ body {
   color: #999; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #880033; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  border-radius: 10px; }
+
+h3 {
+  margin: 0 0 1em 0; }
 
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%; }
+  #wrapper p {
+    line-height: 1.5; }
 
 header {
   float: left;
@@ -40,15 +47,16 @@ nav {
     margin: 0 10px;
     padding: 0; }
   nav li {
-    display: inline-block; }
+    display: inline-block;
+    margin: 0 0 0 -5px; }
   nav a {
-    padding: 15px 10px;
+    padding: 10px 10px;
     font-weight: 600;
     color: #fff; }
     nav a:visited {
       color: #fff; }
-    nav a:hover {
-      color: #cccccc; }
+    nav a:hover, nav a.selected {
+      background: #b10042; }
 
 #gallery {
   padding: 0;
@@ -64,6 +72,12 @@ nav {
     font-size: 0.75em;
     font-weight: 700;
     color: #999; }
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%; }
 
 footer {
   clear: both;
