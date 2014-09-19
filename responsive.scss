@@ -1,0 +1,67 @@
+$standard_text: #999;
+$standard_background: #f4f4f4;
+$accent_color: #880033;
+
+@media screen and (min-width: 480px) {
+	#primary {
+		width: 50%;
+		float: left;
+	}
+	
+	#secondary {
+		width: 40%;
+		float: right;
+	}
+
+	#gallery {
+		li {
+			width: 28.333%;
+			&:nth-child(4n) {
+				clear: left;
+			}
+		}
+	}
+
+	.profile-photo {
+		float: left;
+		margin: 0 5% 100px 0;
+	}
+}
+
+@media screen and (min-width: 660px) {
+	nav {
+		background: none;
+		float: right;
+		font-size: 1.125em;
+		margin-right: 5%;
+		text-align: right;
+		width: 45%;
+		margin-top: 25px;
+		color: $standard_text;
+		a {
+			&:visited {
+				color: $standard_text;
+			}
+			&.selected, &:hover {
+				background: none;
+				color: $accent_color;
+			}
+		}
+	}
+	
+	header {
+		#logo {
+			float: left;
+			text-align: left;
+			width: 40%;
+			margin: 20px 0 15px 7%;
+			padding: 0;
+			h1 {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}
+
+
